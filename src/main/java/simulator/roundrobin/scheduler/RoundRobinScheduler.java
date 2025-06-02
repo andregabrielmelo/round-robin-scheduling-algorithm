@@ -81,6 +81,9 @@ public class RoundRobinScheduler {
 					busyTicks++;
 
 					CpuProcess cur = core.getRunningProcess();
+
+					cur.setCpuUse(cur.getCpuUse() + 1);
+
 					core.setQuantumRemaining(core.getQuantumRemaining() - 1);
 					cur.setRemainingBurstTime(cur.getRemainingBurstTime() - 1);
 
@@ -134,13 +137,17 @@ public class RoundRobinScheduler {
 	}
 
 	public void printMetrics() {
-		System.out.println("\n===== Métricas =====");
-		System.out.printf("%-6s | %-10s | %-11s | %-12s%n", "Proc", "Espera", "Turnaround", "TrocasCtx");
-		System.out.println("-----------------------------------------------");
-		allProcesses.forEach(p ->
-				System.out.printf("%-6s | %-10d | %-11d | %-12d%n", p.getId(), p.getWaitingTime(), p.getTurnaroundTime(), p.getContextSwitches()));
-
 		double cpuUtil = 100.0 * busyTicks / (globalTime * cores.size());
+
+		System.out.println("\n===== Métricas =====");
+		System.out.printf("%-6s | %-10s | %-11s | %-18s | %-11s%n", "Proc", "Espera", "Turnaround", "Trocas de Contexto", "Uso da CPU");
+		System.out.println("------------------------------------------------------------------------");
+		allProcesses.forEach(p -> {
+			double processCpuUtil = 100.0 * p.getCpuUse() / (globalTime * cores.size());
+			System.out.printf("%-6s | %-10d | %-11d | %-18d | %-11.2f%%%n",
+					p.getId(), p.getWaitingTime(), p.getTurnaroundTime(), p.getContextSwitches(), processCpuUtil);
+		});
+
 		System.out.println("\nUtilização total da CPU: " + String.format(Locale.US, "%.2f", cpuUtil) + "%");
 		System.out.println("Tempo total simulado: " + globalTime + " ticks\n");
 	}

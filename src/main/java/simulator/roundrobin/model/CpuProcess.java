@@ -28,6 +28,8 @@ public class CpuProcess {
 	private int turnaroundTime = 0;
 	@Builder.Default
 	private int contextSwitches = 0;
+	@Builder.Default
+	private float cpuUse = 0;
 
 	public Burst currentBurst() {
 		if (!hasMoreBursts()) {

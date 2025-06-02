@@ -23,6 +23,7 @@ public class Main {
         int cores = 2;
         int quantum = 4;
 
+        // Verifica os argumentos do programa
         if (args.length >= 1) {
             jsonPath = args[0];
             if (args.length >= 2) {
