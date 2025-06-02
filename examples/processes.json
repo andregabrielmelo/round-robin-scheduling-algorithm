@@ -1,0 +1,27 @@
+[
+  {
+    "id": "A",
+    "arrivalTime": 0,
+    "bursts": [
+      { "type": "CPU", "duration": 5 },
+      { "type": "IO",  "duration": 3 },
+      { "type": "CPU", "duration": 4 }
+    ]
+  },
+  {
+    "id": "B",
+    "arrivalTime": 2,
+    "bursts": [
+      { "type": "CPU", "duration": 7 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 3 }
+    ]
+  },
+  {
+    "id": "C",
+    "arrivalTime": 4,
+    "bursts": [
+      { "type": "CPU", "duration": 4 }
+    ]
+  }
+]
