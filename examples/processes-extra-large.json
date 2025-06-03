@@ -1,0 +1,216 @@
+[
+  {
+    "id": "A",
+    "arrivalTime": 0,
+    "bursts": [
+      { "type": "CPU", "duration": 5 },
+      { "type": "IO",  "duration": 3 },
+      { "type": "CPU", "duration": 4 }
+    ]
+  },
+  {
+    "id": "B",
+    "arrivalTime": 2,
+    "bursts": [
+      { "type": "CPU", "duration": 7 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 3 }
+    ]
+  },
+  {
+    "id": "C",
+    "arrivalTime": 4,
+    "bursts": [
+      { "type": "CPU", "duration": 4 }
+    ]
+  },
+  {
+    "id": "D",
+    "arrivalTime": 6,
+    "bursts": [
+      { "type": "CPU", "duration": 6 },
+      { "type": "IO",  "duration": 4 },
+      { "type": "CPU", "duration": 5 }
+    ]
+  },
+  {
+    "id": "E",
+    "arrivalTime": 8,
+    "bursts": [
+      { "type": "CPU", "duration": 8 }
+    ]
+  },
+  {
+    "id": "F",
+    "arrivalTime": 10,
+    "bursts": [
+      { "type": "CPU", "duration": 3 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 2 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 1 }
+    ]
+  },
+  {
+    "id": "G",
+    "arrivalTime": 12,
+    "bursts": [
+      { "type": "CPU", "duration": 9 },
+      { "type": "IO",  "duration": 3 }
+    ]
+  },
+  {
+    "id": "H",
+    "arrivalTime": 14,
+    "bursts": [
+      { "type": "CPU", "duration": 2 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 3 }
+    ]
+  },
+  {
+    "id": "I",
+    "arrivalTime": 16,
+    "bursts": [
+      { "type": "CPU", "duration": 5 }
+    ]
+  },
+  {
+    "id": "J",
+    "arrivalTime": 18,
+    "bursts": [
+      { "type": "CPU", "duration": 7 },
+      { "type": "IO",  "duration": 5 }
+    ]
+  },
+  {
+    "id": "K",
+    "arrivalTime": 20,
+    "bursts": [
+      { "type": "CPU", "duration": 6 },
+      { "type": "IO",  "duration": 1 },
+      { "type": "CPU", "duration": 4 }
+    ]
+  },
+  {
+    "id": "L",
+    "arrivalTime": 22,
+    "bursts": [
+      { "type": "CPU", "duration": 8 }
+    ]
+  },
+  {
+    "id": "M",
+    "arrivalTime": 24,
+    "bursts": [
+      { "type": "CPU", "duration": 3 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 1 }
+    ]
+  },
+  {
+    "id": "N",
+    "arrivalTime": 26,
+    "bursts": [
+      { "type": "CPU", "duration": 4 },
+      { "type": "IO",  "duration": 3 },
+      { "type": "CPU", "duration": 5 }
+    ]
+  },
+  {
+    "id": "O",
+    "arrivalTime": 28,
+    "bursts": [
+      { "type": "CPU", "duration": 7 }
+    ]
+  },
+  {
+    "id": "P",
+    "arrivalTime": 30,
+    "bursts": [
+      { "type": "CPU", "duration": 6 },
+      { "type": "IO",  "duration": 4 }
+    ]
+  },
+  {
+    "id": "Q",
+    "arrivalTime": 32,
+    "bursts": [
+      { "type": "CPU", "duration": 3 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 2 }
+    ]
+  },
+  {
+    "id": "R",
+    "arrivalTime": 34,
+    "bursts": [
+      { "type": "CPU", "duration": 5 }
+    ]
+  },
+  {
+    "id": "S",
+    "arrivalTime": 36,
+    "bursts": [
+      { "type": "CPU", "duration": 4 },
+      { "type": "IO",  "duration": 1 }
+    ]
+  },
+  {
+    "id": "T",
+    "arrivalTime": 38,
+    "bursts": [
+      { "type": "CPU", "duration": 7 },
+      { "type": "IO",  "duration": 3 },
+      { "type": "CPU", "duration": 4 }
+    ]
+  },
+  {
+    "id": "U",
+    "arrivalTime": 40,
+    "bursts": [
+      { "type": "CPU", "duration": 2 }
+    ]
+  },
+  {
+    "id": "V",
+    "arrivalTime": 42,
+    "bursts": [
+      { "type": "CPU", "duration": 9 },
+      { "type": "IO",  "duration": 5 }
+    ]
+  },
+  {
+    "id": "W",
+    "arrivalTime": 44,
+    "bursts": [
+      { "type": "CPU", "duration": 4 },
+      { "type": "IO",  "duration": 2 },
+      { "type": "CPU", "duration": 3 }
+    ]
+  },
+  {
+    "id": "X",
+    "arrivalTime": 46,
+    "bursts": [
+      { "type": "CPU", "duration": 6 }
+    ]
+  },
+  {
+    "id": "Y",
+    "arrivalTime": 48,
+    "bursts": [
+      { "type": "CPU", "duration": 5 },
+      { "type": "IO",  "duration": 3 }
+    ]
+  },
+  {
+    "id": "Z",
+    "arrivalTime": 50,
+    "bursts": [
+      { "type": "CPU", "duration": 7 },
+      { "type": "IO",  "duration": 4 },
+      { "type": "CPU", "duration": 6 }
+    ]
+  }
+]
